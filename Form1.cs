@@ -21,7 +21,16 @@ namespace Caguisan_BMS_Test
         {
 
         }
-
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            int y = Screen.PrimaryScreen.Bounds.Height;
+            int x = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = y - 40;
+            this.Width = x;
+            this.Left = 0; 
+            this.Top = 0;
+            this.Top = 0;
+        }
         private void button3_Click(object sender, EventArgs e)
         {
 

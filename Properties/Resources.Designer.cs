@@ -69,5 +69,15 @@ namespace Caguisan_BMS_Test.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Segoe_Fluent_Icons_Regular___Report_Document {
+            get {
+                object obj = ResourceManager.GetObject("Segoe Fluent Icons Regular - Report Document", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

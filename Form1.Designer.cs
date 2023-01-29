@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Navigation_Panel = new System.Windows.Forms.Panel();
             this.Records = new System.Windows.Forms.Button();
             this.Maintenance = new System.Windows.Forms.Button();
             this.Barangay_Issue = new System.Windows.Forms.Button();
@@ -38,27 +38,30 @@
             this.Sign_Out = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.Navigation_Panel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // Navigation_Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.Sign_Out);
-            this.panel1.Controls.Add(this.Records);
-            this.panel1.Controls.Add(this.Maintenance);
-            this.panel1.Controls.Add(this.Barangay_Issue);
-            this.panel1.Controls.Add(this.Files);
-            this.panel1.Controls.Add(this.Resident_Record);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 845);
-            this.panel1.TabIndex = 0;
+            this.Navigation_Panel.AutoSize = true;
+            this.Navigation_Panel.BackColor = System.Drawing.Color.DarkBlue;
+            this.Navigation_Panel.Controls.Add(this.panel2);
+            this.Navigation_Panel.Controls.Add(this.Sign_Out);
+            this.Navigation_Panel.Controls.Add(this.Records);
+            this.Navigation_Panel.Controls.Add(this.Maintenance);
+            this.Navigation_Panel.Controls.Add(this.Barangay_Issue);
+            this.Navigation_Panel.Controls.Add(this.Files);
+            this.Navigation_Panel.Controls.Add(this.Resident_Record);
+            this.Navigation_Panel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Navigation_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Navigation_Panel.Margin = new System.Windows.Forms.Padding(4);
+            this.Navigation_Panel.Name = "Navigation_Panel";
+            this.Navigation_Panel.Size = new System.Drawing.Size(353, 845);
+            this.Navigation_Panel.TabIndex = 0;
             // 
             // Records
             // 
@@ -67,7 +70,7 @@
             this.Records.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Records.Font = new System.Drawing.Font("Segoe UI Variable Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Records.ForeColor = System.Drawing.Color.Transparent;
-            this.Records.Location = new System.Drawing.Point(-3, 453);
+            this.Records.Location = new System.Drawing.Point(3, 453);
             this.Records.Margin = new System.Windows.Forms.Padding(4);
             this.Records.Name = "Records";
             this.Records.Padding = new System.Windows.Forms.Padding(4);
@@ -84,7 +87,7 @@
             this.Maintenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Maintenance.Font = new System.Drawing.Font("Segoe UI Variable Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Maintenance.ForeColor = System.Drawing.Color.Transparent;
-            this.Maintenance.Location = new System.Drawing.Point(-3, 403);
+            this.Maintenance.Location = new System.Drawing.Point(3, 403);
             this.Maintenance.Margin = new System.Windows.Forms.Padding(4);
             this.Maintenance.Name = "Maintenance";
             this.Maintenance.Padding = new System.Windows.Forms.Padding(4);
@@ -101,7 +104,7 @@
             this.Barangay_Issue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Barangay_Issue.Font = new System.Drawing.Font("Segoe UI Variable Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Barangay_Issue.ForeColor = System.Drawing.Color.Transparent;
-            this.Barangay_Issue.Location = new System.Drawing.Point(-3, 353);
+            this.Barangay_Issue.Location = new System.Drawing.Point(3, 353);
             this.Barangay_Issue.Margin = new System.Windows.Forms.Padding(4);
             this.Barangay_Issue.Name = "Barangay_Issue";
             this.Barangay_Issue.Padding = new System.Windows.Forms.Padding(4);
@@ -119,7 +122,7 @@
             this.Files.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Files.Font = new System.Drawing.Font("Segoe UI Variable Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Files.ForeColor = System.Drawing.Color.Snow;
-            this.Files.Location = new System.Drawing.Point(-3, 303);
+            this.Files.Location = new System.Drawing.Point(3, 303);
             this.Files.Margin = new System.Windows.Forms.Padding(4);
             this.Files.Name = "Files";
             this.Files.Padding = new System.Windows.Forms.Padding(4);
@@ -134,10 +137,12 @@
             // 
             this.Resident_Record.BackColor = System.Drawing.Color.Transparent;
             this.Resident_Record.FlatAppearance.BorderSize = 0;
+            this.Resident_Record.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Resident_Record.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Cyan;
             this.Resident_Record.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Resident_Record.Font = new System.Drawing.Font("Segoe UI Variable Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Resident_Record.ForeColor = System.Drawing.Color.Snow;
-            this.Resident_Record.Location = new System.Drawing.Point(-3, 253);
+            this.Resident_Record.Location = new System.Drawing.Point(3, 253);
             this.Resident_Record.Margin = new System.Windows.Forms.Padding(4);
             this.Resident_Record.Name = "Resident_Record";
             this.Resident_Record.Padding = new System.Windows.Forms.Padding(4);
@@ -152,10 +157,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(686, 25);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(513, 47);
+            this.label1.Size = new System.Drawing.Size(451, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Barangay Management System";
             // 
@@ -166,7 +171,7 @@
             this.Sign_Out.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sign_Out.Font = new System.Drawing.Font("Segoe UI Variable Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sign_Out.ForeColor = System.Drawing.Color.Transparent;
-            this.Sign_Out.Location = new System.Drawing.Point(-3, 789);
+            this.Sign_Out.Location = new System.Drawing.Point(6, 797);
             this.Sign_Out.Margin = new System.Windows.Forms.Padding(4);
             this.Sign_Out.Name = "Sign_Out";
             this.Sign_Out.Padding = new System.Windows.Forms.Padding(4);
@@ -196,21 +201,34 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(353, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1297, 57);
+            this.panel3.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1650, 845);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.Navigation_Panel);
             this.Name = "Form1";
             this.Text = "Caguisan BMS Test";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
+            this.Navigation_Panel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +236,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Navigation_Panel;
         private System.Windows.Forms.Button Barangay_Issue;
         private System.Windows.Forms.Button Files;
         private System.Windows.Forms.Button Resident_Record;
@@ -228,6 +246,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Sign_Out;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
